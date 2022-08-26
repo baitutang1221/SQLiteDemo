@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="30dp"
+        android:orientation="vertical">
+
+<!--        <RatingBar-->
+<!--            android:id="@+id/ratingBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:text="SQLite数据库常规操作"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#00CC00"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="insertData"
+            android:text="添加数据"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="deleteUser"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="删除关于张三的数据" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:onClick="updateLisiAge"
+            android:layout_marginTop="10dp"
+            android:text="修改数据,李四年龄改为100岁" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearStudentTable"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="清空STUDENT表" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dropStudentTable"
+            android:background="#FF0000"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFCC"
+            android:text="删除STUDENT表" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="queryAllData"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:text="查询所有数据" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="queryData1"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:text="查询名字叫李四的人" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="queryData2"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:text="查询名字中包含李四的所有人" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="queryData3"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:text="查询年龄大于20的所有人" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="queryData4"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:text="查询20岁以上的男性" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="sortStudentByAgeAsc"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:text="按年龄从小到大排序显示所有人" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="sortStudentByAgeDesc"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:text="按年龄从大到小排序显示所有人" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="querySumAgeGentle"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:text="求所有男性的年龄之和" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="queryAveAgeWomen"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:text="求所有女性的年龄平均值" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="queryMaxAgeUserinfo"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:text="谁的年龄最大" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="queryMinAgeUserinfo"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:text="是的年龄最小" />
+
+
+    </LinearLayout>
+
+</ScrollView>
