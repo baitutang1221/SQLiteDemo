@@ -1,4 +1,4 @@
 # SQLiteDemo
 SQLite数据库的一些基础使用
 
-![](https://img2022.cnblogs.com/blog/1162622/202208/1162622-20220826105636514-462091613.jpg/w/200)
+> ![Screenshot_20220826_103748](https://upload-images.jianshu.io/upload_images/26398730-b61fcdf7ac3caf69.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/500)
